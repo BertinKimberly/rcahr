@@ -122,21 +122,14 @@ export default function Home() {
          </section>
 
          <section className="flex gap-6 flex-col md:flex-row">
-            <div className="mb-2 font-medium border p-4 rounded-lg">
-               <small className="mb-6">Ratings</small>
-
+            <div className="mb-2 font-medium border-[0.5px] p-4 rounded-lg space-y-3">
+               <small className="">Ratings</small>
                <RatingsTable projects={projects} />
             </div>
-            <div className="border w-full md:w-[30%] xl:w-[35%] p-2 rounded-lg">
+            <div className="border-[0.5px] w-full md:w-[30%] xl:w-[35%] p-2 rounded-lg">
                <small>Overall Ratings</small>
                <RatingsChart />
             </div>
-         </section>
-         <section>
-            <CardContent className="flex justify-between gap-4">
-               <h4>Project Workload</h4>
-               <ProjectsChart />
-            </CardContent>
          </section>
       </div>
    );

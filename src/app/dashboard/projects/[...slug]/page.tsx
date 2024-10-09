@@ -57,7 +57,7 @@ const ProjectPage: React.FC = () => {
             <div className="mb-3 relative">
                <img src={data.project.cover_image} alt={data.project.cover_image} className="w-full h-[30vh] sm:h-[40vh] object-cover mt-8 md:mt-0 brightness-50" />
                <div className='absolute flex items-center justify-center h-full w-full top-0'>
-                  <img src={data.project.logo} alt={data.project.logo} className="object-cover max-h-[10rem]" />
+                  <img src={data.project.logo} alt={data.project.logo} className="object-cover max-h-[10rem] max-w-[90%]" />
                </div>
             </div>
             <div className="p-4 md:p-4">

@@ -6,7 +6,6 @@ import MobileNav from "@/components/MobileNav";
 import { useGetUnRatedProjects } from "@/hooks/useProject";
 import { Button } from "@/components/ui/button";
 import { useAuthStore } from "@/store/useAuthStore";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Input } from "@/components/ui/input";
 
@@ -81,7 +80,7 @@ const Page = () => {
                         <img
                            src={project.logo}
                            alt={project.name}
-                           className="max-h-28 md:max-h-32"
+                           className="max-h-28 md:max-h-32 max-w-[90%]"
                         />
                      </CardContent>
                      <p className="p-4 text-lg font-medium">{project.name}</p>
